@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Menu({title}) {
+export default function Menu({title, href}) {
   return (
-    <div className="list-item">
-      <div>{title}</div>
+    <div className="menu__item">
+      <a href={href}>{title}</a>
     </div>
   );
 }

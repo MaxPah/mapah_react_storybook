@@ -21,8 +21,8 @@ storiesOf('Button', module)
   ));
 
   storiesOf('Menu', module)
-    .add('test1', () => <Menu title="TestToto1" />)
-    .add('test2', () => <Menu title="TestToto2" />);
+    .add('test1', () => <Menu title="TestToto1" href='#' />)
+    .add('test2', () => <Menu title="TestToto2" href='#' />);
 
     storiesOf('Brand', module)
       .add('Header', () => <Brand title="Maxime PAHUD" />);
