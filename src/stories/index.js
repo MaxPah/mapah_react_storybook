@@ -1,28 +1,25 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
-
-import { Button, Welcome } from '@storybook/react/demo';
-import Menu from '../components/1-Atoms/Menu/Menu';
+import MenuItem from '../components/1-Atoms/MenuItem/MenuItem';
 import Brand from '../components/1-Atoms/Brand/Brand';
+import  '../App.css';
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+storiesOf('MenuItem', module)
+  .add('Item', () => <MenuItem title="TestToto1" href="#" />)
+  .add('Item blue', () => <MenuItem title="TestToto2" href="#" classAdd="blue" />);
 
-storiesOf('Button', module)
-  .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
-  ));
+storiesOf('Brand', module)
+ .add('Brand', () => <Brand title="Maxime PAHUD" />);
 
-  storiesOf('Menu', module)
-    .add('test1', () => <Menu title="TestToto1" href='#' />)
-    .add('test2', () => <Menu title="TestToto2" href='#' />);
 
-    storiesOf('Brand', module)
-      .add('Header', () => <Brand title="Maxime PAHUD" />);
+storiesOf('Menu', module)
+  .add('Item', () => <header class="header">
+    <div class="header--left">
+      <Brand title="Maxime PAHUD" />
+    </div>
+    <div class="header--right">
+      <MenuItem title="TestToto1" href="#" />
+      <MenuItem title="TestToto1" href="#" classAdd="blue" />
+    </div>
+  </header>);

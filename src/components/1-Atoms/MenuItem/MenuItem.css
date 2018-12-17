@@ -1,0 +1,15 @@
+.menu-item {
+    display: inline-block;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #383838;
+    padding: 12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu-item.blue a {
+    color: #ffffff;
+    background-color: #0074D9;
+}
