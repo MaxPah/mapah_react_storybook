@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
+import { setOptions } from '@storybook/addon-options';
 import MenuItem from '../components/1-Atoms/MenuItem/MenuItem';
 import Brand from '../components/1-Atoms/Brand/Brand';
 import  '../App.css';
@@ -10,7 +11,12 @@ import PgfTitleImage from '../components/1-Atoms/PgfTitleImage/PgfTitleImage';
 import PgfTitleImageCta from '../components/1-Atoms/PgfTitleImageCta/PgfTitleImageCta';
 import PgfSlider from '../components/1-Atoms/PgfSlider/PgfSlider';
 
-storiesOf('1 - Header', module)
+setOptions({
+  hierarchySeparator: /\/|\./, // matches a . or /
+  hierarchyRootSeparator: /\|/, //matches a |
+});
+
+storiesOf('Header', module)
   .add('Item', () => <header class="header">
     <div class="header--left">
       <Brand title="Maxime PAHUD" />
@@ -22,16 +28,16 @@ storiesOf('1 - Header', module)
   </header>);
 
 
-storiesOf('2 - MenuItem', module)
+storiesOf('Header|MenuItem', module)
   .add('Item', () => <MenuItem title="TestToto1" href="#" />)
   .add('Item blue', () => <MenuItem title="TestToto2" href="#" classAdd="blue" />);
 
-storiesOf('3 - Brand', module)
+storiesOf('Header|Brand', module)
   .add('Brand', () => <Brand title="Maxime PAHUD" />);
 
 
 
-storiesOf('4 - Paragraphs', module)
+storiesOf('Paragraphs', module)
   .add('Text Image', () => 
       <div>
         <PgfTextImage 

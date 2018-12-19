@@ -1,6 +1,6 @@
 import React from 'react';
 import './PgfSlider.css';
-import Siema from 'siema';
+// import Siema from 'siema';
 
 export default function PgfSlider({ title, slides}) {
     return (
