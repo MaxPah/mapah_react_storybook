@@ -1,0 +1,17 @@
+.pgf-title-image {
+    position: relative;
+}
+
+.pgf-title-image--title {
+    position: absolute;
+    margin: 50px;
+    font-family: Ubuntu, sans-serif;
+    color: #ffffff;
+    opacity: 0.6;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.pgf-title-image--image {
+
+}
