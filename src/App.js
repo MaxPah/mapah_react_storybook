@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Brand from './components/1-Atoms/Brand/Brand';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Brand title="Maxime PAHUD" />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>

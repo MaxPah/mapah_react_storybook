@@ -16,14 +16,12 @@
 .pgf-text-image-cta--title {
     vertical-align: top;
     margin: 50px;
-    font-family: Ubuntu, sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
 }
 
 .pgf-text-image-cta--text {
     margin: 20px;
-    font-family: Ubuntu, sans-serif;
 }
 
 .pgf-text-image-cta--image img {
@@ -33,7 +31,6 @@
 
 .pgf-text-image-cta--cta {
     margin: 50px 20px 20px 20px;
-    font-family: Ubuntu, sans-serif;
     color: #444444;
     text-align: center;
 }

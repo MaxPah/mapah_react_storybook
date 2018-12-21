@@ -1,85 +1,105 @@
 .brand {
-    display: flex;
+  display: flex;
 }
 
 .brand--logo {
-    padding: 10px;
-    height: 40px;
-    width: 40px;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
 }
 
-.brand--logo img {
-    height: 100%;
-    width: auto;
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 9000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: 9000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: 9000ms;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-    animation-name: spin;
-    animation-duration: 9000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+.brand__svg {
+  height: 100%;
+  width: auto;
 }
-.brand--logo img:hover {
-    -webkit-animation-name: reverse-spin;
-    -moz-animation-name: reverse-spin;
-    -ms-animation-name: reverse-spin;
-    animation-name: reverse-spin;
+
+.brand__rect {
+  transition: transform 1000ms ease;
+  transform-origin: center center;
+  position: relative;
 }
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
+
+.brand__svg:hover .brand__rect {
+  transform: rotateX(180deg);
 }
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+
+.brand__rect--8 {
+  transition-delay: 0ms;
 }
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
+
+.brand__rect--7 {
+  transition-delay: 200ms;
 }
+
+.brand__rect--6 {
+  transition-delay: 400ms;
+}
+
+.brand__rect--5 {
+  transition-delay: 600ms;
+}
+
+.brand__rect--4 {
+  transition-delay: 800ms;
+}
+
+.brand__rect--3 {
+  transition-delay: 1000ms;
+}
+
+.brand__rect--2 {
+  transition-delay: 1200ms;
+}
+
+.brand__rect--1 {
+  transition-delay: 1400ms;
+}
+
+.brand__svg:hover .brand__rect--1 {
+  transition-delay: 0ms;
+}
+
+.brand__svg:hover .brand__rect--2 {
+  transition-delay: 150ms;
+}
+
+.brand__svg:hover .brand__rect--3 {
+  transition-delay: 300ms;
+}
+
+.brand__svg:hover .brand__rect--4 {
+  transition-delay: 450ms;
+}
+
+.brand__svg:hover .brand__rect--5 {
+  transition-delay: 600ms;
+}
+
+.brand__svg:hover .brand__rect--6 {
+  transition-delay: 750ms;
+}
+
+.brand__svg:hover .brand__rect--7 {
+  transition-delay: 900ms;
+}
+
+.brand__svg:hover .brand__rect--8 {
+  transition-delay: 1050ms;
+}
+
 @keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-@-ms-keyframes reverse-spin {
-    from { -ms-transform: rotate(360deg); }
-    to { -ms-transform: rotate(0deg); }
-}
-@-moz-keyframes reverse-spin {
-    from { -moz-transform: rotate(360deg); }
-    to { -moz-transform: rotate(0deg); }
-}
-@-webkit-keyframes reverse-spin {
-    from { -webkit-transform: rotate(360deg); }
-    to { -webkit-transform: rotate(0deg); }
-}
-@keyframes reverse-spin {
-    from {
-        transform:rotate(360deg);
-    }
-    to {
-        transform:rotate(0deg);
-    }
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
 }
 
 .brand--name {
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 5px 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5px 10px;
 }

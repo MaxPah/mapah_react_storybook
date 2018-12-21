@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 import MenuItem from '../components/1-Atoms/MenuItem/MenuItem';
 import Brand from '../components/1-Atoms/Brand/Brand';
+import  '../index.css';
 import  '../App.css';
 import PgfTextImage from '../components/1-Atoms/PgfTextImage/PgfTextImage';
 import PgfTextImageCta from '../components/1-Atoms/PgfTextImageCta/PgfTextImageCta';

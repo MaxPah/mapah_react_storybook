@@ -16,14 +16,12 @@
 .pgf-text-image--title {
     vertical-align: top;
     margin: 50px;
-    font-family: Ubuntu, sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
 }
 
 .pgf-text-image--text {
     margin: 20px;
-    font-family: Ubuntu, sans-serif;
 }
 
 .pgf-text-image--image img {
