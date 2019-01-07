@@ -1,8 +1,41 @@
 .brand {
-    .brand--logo {
+  display: flex;
 
+  .brand__name {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px 10px;
+  }
+
+  .brand__svg {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+
+    .brand__rect {
+      transition: transform 1000ms ease;
+      transform-origin: center center;
+      position: relative;
+    }  
+
+    &:hover {
+      .brand__rect {
+        transform: rotateX(180deg);
+      }
     }
-    .brand--name {
-        
+
+    @for $key from 1 through 8 {
+      .brand__rect.brand__rect--#{$key} {
+        transition-delay: #{200 * (8 - $key)}ms;
+      }
     }
+  }
+
+  @for $key from 8 through 1 {
+    .brand__svg:hover .brand__rect.brand__rect--#{$key} {
+      transition-delay: #{200 * (8 - $key)}ms;
+    }
+  }
 }

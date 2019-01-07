@@ -1,39 +1,34 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
-import MenuItem from '../components/1-Atoms/MenuItem/MenuItem';
-import Brand from '../components/1-Atoms/Brand/Brand';
-import  '../index.css';
-import  '../App.css';
-import PgfTextImage from '../components/1-Atoms/PgfTextImage/PgfTextImage';
-import PgfTextImageCta from '../components/1-Atoms/PgfTextImageCta/PgfTextImageCta';
-import PgfTitleImage from '../components/1-Atoms/PgfTitleImage/PgfTitleImage';
-import PgfTitleImageCta from '../components/1-Atoms/PgfTitleImageCta/PgfTitleImageCta';
-import PgfSlider from '../components/1-Atoms/PgfSlider/PgfSlider';
-
-setOptions({
-  hierarchySeparator: /\/|\./, // matches a . or /
-  hierarchyRootSeparator: /\|/, //matches a |
-});
+import MenuItem from '../MenuItem/MenuItem';
+import Brand from '../Brand/Brand';
+import  '../../../index.css';
+import  '../../../App.css';
+import PgfTextImage from '../PgfTextImage/PgfTextImage';
+import PgfTextImageCta from '../PgfTextImageCta/PgfTextImageCta';
+import PgfTitleImage from '../PgfTitleImage/PgfTitleImage';
+import PgfTitleImageCta from '../PgfTitleImageCta/PgfTitleImageCta';
+import PgfSlider from '../PgfSlider/PgfSlider';
+import PgfRandomPics from '../PgfRandomPics/PgfRandomPics';
 
 storiesOf('Header', module)
-  .add('Item', () => <header class="header">
-    <div class="header--left">
+  .add('Item', () => <header className="header">
+    <div className="header--left">
       <Brand title="Maxime PAHUD" />
     </div>
-    <div class="header--right">
+    <div className="header--right">
       <MenuItem title="TestToto1" href="#" />
       <MenuItem title="TestToto1" href="#" classAdd="blue" />
     </div>
   </header>);
 
 
-storiesOf('Header|MenuItem', module)
+storiesOf('Header.MenuItem', module)
   .add('Item', () => <MenuItem title="TestToto1" href="#" />)
   .add('Item blue', () => <MenuItem title="TestToto2" href="#" classAdd="blue" />);
 
-storiesOf('Header|Brand', module)
+storiesOf('Header.Brand', module)
   .add('Brand', () => <Brand title="Maxime PAHUD" />);
 
 
@@ -89,6 +84,20 @@ storiesOf('Paragraphs', module)
     slides={[
       "https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80",
       "https://www.oceaniahotels.com/media/cache/slider_base/uploads/portfolio/53fefeea79bf8_R%C3%A9gion-Bretagne.jpg"
+    ]}
+    />
+  )
+  .add('RandomPics', () => <PgfRandomPics
+    pics={[
+      "https://via.placeholder.com/50?text=1",
+      "https://via.placeholder.com/50?text=2",
+      "https://via.placeholder.com/50?text=3",
+      "https://via.placeholder.com/50?text=4",
+      "https://via.placeholder.com/50?text=5",
+      "https://via.placeholder.com/50?text=6",
+      "https://via.placeholder.com/50?text=7",
+      "https://via.placeholder.com/50?text=8",
+      "https://via.placeholder.com/50?text=9",
     ]}
     />
   );
