@@ -1,5 +1,5 @@
 import React from 'react';
-import './MenuItem.css';
+import './MenuItem.scss';
 
 export default function MenuItem({title, href, classAdd}) {
   return (

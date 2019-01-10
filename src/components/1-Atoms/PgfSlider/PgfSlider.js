@@ -1,5 +1,5 @@
 import React from 'react';
-import './PgfSlider.css';
+import './PgfSlider.scss';
 import Siema from 'siema';
 
 export default class PgfSlider extends React.Component {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './PgfTitleImageCta.css';
+import './PgfTitleImageCta.scss';
 
 export default function PgfTextImageCta({ text, image, btnText, btnUrl }) {
     return (

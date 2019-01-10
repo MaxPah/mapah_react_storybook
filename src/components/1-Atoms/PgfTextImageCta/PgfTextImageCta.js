@@ -1,5 +1,5 @@
 import React from 'react';
-import './PgfTextImageCta.css';
+import './PgfTextImageCta.scss';
 
 export default function PgfTextImageCta({ title, text, image, btnText, btnUrl, inverted = '' }) {
     return (

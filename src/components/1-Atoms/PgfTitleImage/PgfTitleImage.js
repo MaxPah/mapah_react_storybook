@@ -1,5 +1,5 @@
 import React from 'react';
-import './PgfTitleImage.css';
+import './PgfTitleImage.scss';
 
 export default function PgfTitleImage({ text, image }) {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './PgfTextImage.css';
+import './PgfTextImage.scss';
 
 export default function PgfTextImage({ title, text, image, inverted = '' }) {
     return (

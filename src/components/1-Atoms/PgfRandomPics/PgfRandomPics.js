@@ -1,5 +1,5 @@
 import React from 'react';
-import './PgfRandomPics.css';
+import './PgfRandomPics.scss';
 
 export default class PgfRandomPics extends React.Component {
 

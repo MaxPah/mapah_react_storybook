@@ -2,7 +2,7 @@ import { configure } from '@storybook/react';
 import { setAddon } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 import { addDecorator } from '@storybook/react';
-import { withConsole } from '@storybook/addon-console';
+// import { withConsole } from '@storybook/addon-console';
 // import staticMarkup from 'react-storybook-addon-static-markup';
 
 const req = require.context('../src', true, /\.stories\.js$/);
@@ -10,7 +10,7 @@ function loadStories() {
   req.keys().forEach((filename) => req(filename))
 }
 
-addDecorator((storyFn, context) => withConsole()(storyFn)(context));
+// addDecorator((storyFn, context) => withConsole()(storyFn)(context));
 
 // Option defaults:
 setOptions({

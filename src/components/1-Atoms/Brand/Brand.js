@@ -1,5 +1,5 @@
 import React from "react";
-import "./Brand.css";
+import "./Brand.scss";
 
 export default function Brand({title}) {
   const width = 177;
