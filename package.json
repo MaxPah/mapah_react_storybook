@@ -2,6 +2,7 @@
   "name": "mapah_react_storybook",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maxpah.github.io/mapah_react_storybook",
   "dependencies": {
     "babel-plugin-syntax-jsx": "^6.18.0",
     "node-sass-chokidar": "^1.3.4",
@@ -18,6 +19,8 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -46,6 +49,7 @@
     "@storybook/addons": "^4.1.3",
     "@storybook/react": "^4.1.3",
     "babel-loader": "^8.0.4",
+    "gh-pages": "^2.0.1",
     "storybook-addon-themes": "0.0.4"
   }
 }

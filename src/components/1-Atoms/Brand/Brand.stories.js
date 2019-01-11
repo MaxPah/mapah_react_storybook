@@ -89,15 +89,22 @@ storiesOf('Paragraphs', module)
   )
   .add('RandomPics', () => <PgfRandomPics
     pics={[
-      "https://via.placeholder.com/100?text=1",
-      "https://via.placeholder.com/100?text=2",
-      "https://via.placeholder.com/100?text=3",
-      "https://via.placeholder.com/100?text=4",
-      "https://via.placeholder.com/100?text=5",
-      "https://via.placeholder.com/100?text=6",
-      "https://via.placeholder.com/100?text=7",
-      "https://via.placeholder.com/100?text=8",
-      "https://via.placeholder.com/100?text=9",
+      "https://via.placeholder.com/60?text=1",
+      "https://via.placeholder.com/60?text=2",
+      "https://via.placeholder.com/60?text=3",
+      "https://via.placeholder.com/60?text=4",
+      "https://via.placeholder.com/60?text=5",
+      "https://via.placeholder.com/60?text=6",
+      "https://via.placeholder.com/60?text=7",
+      "https://via.placeholder.com/60?text=8",
+      "https://via.placeholder.com/60?text=9",
+      "https://via.placeholder.com/60?text=10",
+      "https://via.placeholder.com/60?text=11",
+      "https://via.placeholder.com/60?text=12",
+      "https://via.placeholder.com/60?text=13",
+      "https://via.placeholder.com/60?text=14",
+      "https://via.placeholder.com/60?text=15",
+      "https://via.placeholder.com/60?text=16",
     ]}
     />
   );
