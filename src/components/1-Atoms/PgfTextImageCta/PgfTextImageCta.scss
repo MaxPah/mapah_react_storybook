@@ -2,13 +2,13 @@
   position: relative;
   display: flex;
 
+  &.inverted {
+    flex-direction: row-reverse;
+  }
+
   .pgf-text-image-cta--left,
   .pgf-text-image-cta--right {
     min-width: 50%;
-  }
-
-  .pgf-text-image-cta.inverted {
-    flex-direction: row-reverse;
   }
 
   .pgf-text-image-cta--title {

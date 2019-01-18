@@ -5,8 +5,8 @@ import '../../../App.css';
 
 import JmlHeader from '../JmlHeader/JmlHeader';
 
-storiesOf('Paragraphs', module)
-  .add('JmlHeader', () => <JmlHeader
+storiesOf('Paragraphs/JmlHeader', module)
+  .add('default', () => <JmlHeader
     links={[
       {
         url: 'http://google.fr',
