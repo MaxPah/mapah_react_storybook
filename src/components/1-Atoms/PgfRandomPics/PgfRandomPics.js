@@ -2,36 +2,33 @@ import React from 'react';
 import './PgfRandomPics.scss';
 
 export default class PgfRandomPics extends React.Component {
+  shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (array.length));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+  
   componentDidMount() {}
 
   render() {
     const { pics } = this.props;
 
-    var arr = [];
-    var imageList = [];
-
+    const imageList = [];
 
     // Display image randomly.
-    if (pics.length < 15) {
-      for (var i = 0; i < 15; i++) {
+    for (var i = 0; i < 16; i++) {
+      if (i < pics.length) {
+        imageList.push(<div className="random-item"><img src={pics[i]} alt="" /></div>);
+      } else {
         imageList.push(<div className="random-item no-image"></div>);
       }
-      for (var i = 0; i < pics.length; i++) {
-        arr.push(Math.floor(Math.random() * 15) + 1);
-        imageList[arr[i]] = (<div className="random-item"><img src={pics[i]} alt="" /></div>)
-      }
     }
-    else {
-      for (var i = 0; i < 16; i++) {
-        imageList[i] = (<div className="random-item"><img src={pics[i]} alt="" /></div>)
-      }
-    }
+    this.shuffleArray(imageList);
 
     return (
       <div className="pgf-random-pics js-random-pics">
-        {imageList.map(function (imageItem, key) {
-          return imageItem;
-        })}
+        {imageList.map(imageItem => imageItem)}
       </div>
     );
   }

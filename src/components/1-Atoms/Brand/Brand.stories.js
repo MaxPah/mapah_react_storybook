@@ -24,7 +24,7 @@ storiesOf('Header', module)
   </header>);
 
 
-storiesOf('Header.MenuItem', module)
+storiesOf('Header/MenuItem', module)
   .add('Item', () => <MenuItem title="TestToto1" href="#" />)
   .add('Item blue', () => <MenuItem title="TestToto2" href="#" classAdd="blue" />);
 

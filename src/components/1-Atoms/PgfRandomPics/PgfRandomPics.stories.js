@@ -7,7 +7,7 @@ import  '../../../App.css';
 import PgfRandomPics from '../PgfRandomPics/PgfRandomPics';
 
 storiesOf('Paragraphs', module)
-  .add('RandomPics', () => <PgfRandomPics
+  .add('Paragraphs', () => <PgfRandomPics
     pics={[
       "https://via.placeholder.com/60?text=1",
       "https://via.placeholder.com/60?text=2",
