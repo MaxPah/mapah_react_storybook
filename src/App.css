@@ -43,3 +43,11 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.lame {
+  margin: 25px 0;
+}

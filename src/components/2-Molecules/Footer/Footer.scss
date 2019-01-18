@@ -1,0 +1,35 @@
+.footer {
+  background-color: #383838;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 1fr;
+
+  .footer--right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .brand .brand__svg {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+  }
+
+  .brand__name {
+    display: none;
+  }
+
+  .menu-item {
+    a {
+      color: #f8f8f8;
+    }
+
+    &.blue {
+      a {
+        color: #0074D9;
+        background-color: inherit;
+      }
+    }
+  }
+}
